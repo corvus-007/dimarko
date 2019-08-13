@@ -1,0 +1,38 @@
+.welcome-carousel {
+  @media (max-width: 767px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+}
+
+.welcome-carousel__item {
+  height: 100vh;
+  min-height: 440px;
+
+  @media (orientation: landscape) and (max-height: 767px) and (max-width: 1279px) {
+    height: auto;
+    min-height: auto;
+  }
+}
+
+.welcome-carousel__navigation-holder {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  pointer-events: none;
+
+  @media (min-width: 1280px) {
+    top: 108px;
+    bottom: initial;
+  }
+}
+
+.welcome-carousel__navigation {
+  @media (min-width: 1280px) {
+    padding-top: calc(#{rem(140px)} + 12px);
+  }
+}

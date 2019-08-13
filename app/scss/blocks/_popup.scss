@@ -1,0 +1,41 @@
+.popup {
+  padding: 0;
+  width: calc(100% - 20px * 2);
+  max-width: 480px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+
+  &--narrow {
+    max-width: 360px;
+  }
+}
+
+.popup__header {
+  padding: 32px;
+  padding-bottom: 24px;
+  padding-right: 44px;
+}
+
+.popup__title {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+
+  @media (min-width: 667px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.popup__main {
+  padding: 32px;
+  padding-top: 24px;
+}
+
+.fancybox-close-small {
+  // height: 68px;
+}

@@ -1,0 +1,14 @@
+build/
+other/
+node_modules/
+.publish/
+.vscode/
+.DS_Store
+Thumbs.db
+.idea
+*.sublime*
+*.log
+*.psd
+*.ai
+*.pdf
+*.zip

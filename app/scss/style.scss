@@ -1,0 +1,42 @@
+@import "variables";
+@import "functions";
+@import "mixins";
+
+// Vendors
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
+@import "../../node_modules/swiper/dist/css/swiper.min";
+
+// Global
+@import "global/fonts";
+@import "global/container";
+@import "global/textual";
+@import "global/visually-hidden";
+@import "global/core";
+
+
+// Blocks
+@import "blocks/popup";
+@import "blocks/input";
+@import "blocks/field";
+@import "blocks/form";
+@import "blocks/button";
+@import "blocks/header-contact";
+@import "blocks/site-header";
+@import "blocks/welcome-decors-slide-1";
+@import "blocks/welcome-slide";
+@import "blocks/welcome-carousel-navigation";
+@import "blocks/welcome-carousel";
+@import "blocks/welcome";
+@import "blocks/menu-navigation";
+@import "blocks/gallery-slide";
+@import "blocks/gallery-carousel-navigation";
+@import "blocks/gallery-carousel";
+@import "blocks/contact-info-worktime";
+@import "blocks/contact-info";
+@import "blocks/contact-main";
+@import "blocks/contact-toggle-content";
+@import "blocks/contact-map-city";
+@import "blocks/contact-map-trc";
+@import "blocks/contact";
+@import "blocks/footer-social";
+@import "blocks/site-footer";

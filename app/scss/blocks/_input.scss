@@ -1,0 +1,37 @@
+.input {
+  width: 100%;
+  max-height: 300px;
+  padding: 12px 8px;
+  font: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  resize: vertical;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $base-color;
+  border-radius: 0;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+
+  &:hover {
+    border-bottom-color: $gray-138;
+  }
+
+  &::placeholder {
+    color: $base-color;
+    opacity: 0.5;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+
+  &.wpcf7-not-valid {
+    border-color: $danger-color;
+  }
+}

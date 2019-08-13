@@ -1,0 +1,137 @@
+.welcome-decors-slide-1 {
+}
+
+.welcome-decors-slide-1__decor {
+  position: absolute;
+
+  &--pizza {
+    left: -56%;
+    bottom: -20%;
+  }
+
+  &--sauce {
+    top: 80px;
+    left: 28%;
+  }
+
+  &--cutlets {
+    top: 148px;
+    right: -8%;
+  }
+
+  &--leaflet {
+    top: 20px;
+    right: 0%;
+  }
+
+  @media (max-width: 767px) {
+    &--pizza {
+      width: 320px;
+    }
+
+    &--spices {
+      display: none;
+    }
+
+    &--french-fries {
+      display: none;
+    }
+
+    &--sauce {
+      width: 120px;
+    }
+
+    &--cutlets {
+      width: 136px;
+    }
+
+    &--leaflet {
+      width: 60px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &--pizza {
+      left: -20%;
+      bottom: 2%;
+    }
+
+    &--french-fries {
+      top: 40px;
+      left: 4%;
+    }
+
+    &--spices {
+      right: 0;
+      bottom: 4%;
+    }
+
+    &--sauce {
+      top: 64px;
+      left: 20%;
+    }
+
+    &--cutlets {
+      top: 148px;
+      right: -8%;
+    }
+
+    &--leaflet {
+      top: 20px;
+      right: 0%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &--pizza {
+      left: -8%;
+    }
+
+    &--french-fries {
+      top: rem(60px);
+    }
+
+    &--sauce {
+      left: 22%;
+    }
+
+    &--cutlets {
+      top: 116px;
+      right: 4%;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    &--pizza {
+      left: 1%;
+    }
+
+    &--french-fries {
+      left: 12%;
+    }
+
+    &--spices {
+      right: 2%;
+    }
+
+    &--sauce {
+      top: rem(96px);
+      left: 24%;
+    }
+
+    &--cutlets {
+      top: rem(120px);
+      right: 8%;
+    }
+  }
+
+  // @media (min-width: 1600px) {
+  //   &--pizza {
+  //     bottom: 12%;
+  //   }
+
+  //   &--spices {
+  //     right: 4%;
+  //   }
+  // }
+}

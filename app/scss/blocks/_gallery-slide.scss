@@ -1,0 +1,16 @@
+.gallery-slide {
+}
+
+.gallery-slide__picture {
+  overflow: hidden;
+
+  @include make-fit-object();
+
+  a {
+    display: block;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

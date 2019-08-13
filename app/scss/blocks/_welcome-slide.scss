@@ -1,0 +1,158 @@
+.welcome-slide {
+  padding-top: 78px;
+  padding-bottom: 56px;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding-top: 108px;
+  }
+}
+
+.welcome-slide__content {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+  padding-top: 72px;
+
+  @media (min-width: 375px) {
+    padding-top: 200px;
+  }
+
+  @media (min-width: 667px) {
+    padding-top: 32px;
+    margin-right: 60px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: rem(568px);
+    margin-right: auto;
+    padding-top: 184px;
+  }
+
+  @media (min-width: 1024px) {
+    left: 140px;
+    padding-top: 128px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: rem(140px);
+  }
+
+  @media (min-width: 1440px) {
+    left: 112px;
+  }
+}
+
+.welcome-slide__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+
+  @media (min-width: 375px) {
+    margin-bottom: 36px;
+    font-size: 28px;
+  }
+
+  @media (min-width: 667px) {
+    margin-bottom: 24px;
+    text-align: initial;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 44px;
+    font-size: rem(36px);
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 52px;
+  }
+}
+
+.welcome-slide__emphasis {
+  display: block;
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+
+  @media (min-width: 375px) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 667px) {
+    font-size: 36px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 56px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 52px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: rem(60px);
+  }
+}
+
+.welcome-slide__text {
+  @include clear-mr-edges-elem();
+
+  margin-bottom: 28px;
+  font-size: 18px;
+  text-align: center;
+
+  @media (min-width: 667px) {
+    text-align: initial;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 420px;
+    margin-bottom: 40px;
+    font-size: rem(24px);
+    line-height: 1.2;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: rem(492px);
+  }
+}
+
+.welcome-slide__actions {
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: 667px) {
+    text-align: initial;
+  }
+
+  @media (min-width: 768px) {
+    text-align: right;
+  }
+
+  @media (min-width: 1024px) {
+    text-align: initial;
+  }
+}
+
+.welcome-slide__decors {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // pointer-events: none;
+  user-select: none;
+
+  @media (max-width: 374px) {
+    display: none;
+  }
+}

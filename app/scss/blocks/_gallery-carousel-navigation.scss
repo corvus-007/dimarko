@@ -1,0 +1,45 @@
+.gallery-carousel-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.gallery-carousel-navigation__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 4px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  pointer-events: all;
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.gallery-carousel-navigation__button-icon {
+  display: block;
+  width: rem(22px);
+  height: rem(22px);
+  fill: currentColor;
+}
+
+.gallery-carousel-navigation__counter {
+  display: inline-flex;
+  font-size: 20px;
+
+  @media (min-width: 1024px) {
+    min-width: rem(36px);
+    text-align: center;
+    font-size: rem(24px);
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}

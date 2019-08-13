@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+</head>
+<body class="home">
+  @@include('blocks/site-header.html')
+
+  <section class="welcome">
+    <!-- Slider main container -->
+    <div class="welcome__carousel welcome-carousel swiper-container" data-welcome-carousel>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="welcome-carousel__item welcome-slide swiper-slide">
+          <div class="welcome-slide__content container">
+            <h2 class="welcome-slide__title" data-swiper-parallax="-200">
+              Уютный уголок Италии
+              <span class="welcome-slide__emphasis" data-swiper-parallax="-300">в центре Брянска</span>
+            </h2>
+            <div class="welcome-slide__text" data-swiper-parallax="-300">
+              <p>Мы объединили несколько профессиональных поваров, для того, чтобы создавать настоящие шедевры в нашем ресторане diMarko</p>
+            </div>
+            <p class="welcome-slide__actions" data-swiper-parallax="-400">
+              <a href="" class="button button--arrow">
+                Подробнее
+              </a>
+            </p>
+          </div>
+          <div class="welcome-slide__decors welcome-decors-slide-1 container">
+            <img class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--pizza" src="/images/welcome-slides/pizza.png" srcset="/images/welcome-slides/pizza@2x.png 2x" data-swiper-parallax="200" data-swiper-parallax-opacity="0" role="presentation">
+            <img class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--french-fries" src="/images/welcome-slides/french-fries.png" srcset="/images/welcome-slides/french-fries@2x.png 2x" data-swiper-parallax="400" data-swiper-parallax-opacity="0" role="presentation">
+            <img class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--spices" src="/images/welcome-slides/spices.png" srcset="/images/welcome-slides/spices@2x.png 2x" data-swiper-parallax="-200" data-swiper-parallax-opacity="0" role="presentation">
+            <img class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--sauce" src="/images/welcome-slides/sauce.png" srcset="/images/welcome-slides/sauce@2x.png 2x" data-swiper-parallax="300" data-swiper-parallax-opacity="0" role="presentation">
+            <img class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--cutlets" src="/images/welcome-slides/cutlets.png" srcset="/images/welcome-slides/cutlets@2x.png 2x" data-swiper-parallax="-300" data-swiper-parallax-opacity="0" role="presentation">
+            <img class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--leaflet" src="/images/welcome-slides/leaflet.png" srcset="/images/welcome-slides/leaflet@2x.png 2x" data-swiper-parallax="400" data-swiper-parallax-opacity="0" role="presentation">
+          </div>
+        </div>
+        <div class="welcome-carousel__item welcome-slide swiper-slide">
+          <div class="welcome-slide__content container">
+            <h2 class="welcome-slide__title" data-swiper-parallax="-200">
+              Уютный уголок Италии
+              <span class="welcome-slide__emphasis" data-swiper-parallax="-300">в центре Брянска</span>
+            </h2>
+            <div class="welcome-slide__text" data-swiper-parallax="-300">
+              <p>Архитектура дома придает эксклюзивность жилью. Благородные материалы отделки фасадов.</p>
+            </div>
+            <p class="welcome-slide__actions" data-swiper-parallax="-400">
+              <a href="" class="button button--arrow">
+                Подробнее
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="welcome-carousel__navigation-holder container">
+        <div class="welcome-carousel__navigation welcome-carousel-navigation">
+          <div class="welcome-carousel-navigation__counter"></div>
+          <button class="welcome-carousel-navigation__button welcome-carousel-navigation__button--prev" type="button" aria-label="Предыдущий слайд">
+            <svg viewBox="0 0 100 100">
+              <path d="M 10,50 L 60,100 L 70,90 L 30,50 L 70,10 L 60,0 Z"></path>
+            </svg>
+          </button>
+          <button class="welcome-carousel-navigation__button welcome-carousel-navigation__button--next" type="button" aria-label="Следующий слайд">
+            <svg viewBox="0 0 100 100">
+              <path d="M 10,50 L 60,100 L 70,90 L 30,50 L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180)"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="menu-navigation">
+    <h2 class="visually-hidden">Меню</h2>
+    <ul class="menu-navigation__list">
+      <li class="menu-navigation__item">
+        <img class="menu-navigation__bg-image" src="/images/menu-navigation/burgers.jpg" alt="" role="presentation">
+        <a href="" class="menu-navigation__link">
+          <svg class="menu-navigation__icon" width="16" height="16">
+            <use xlink:href="/images/symbols.svg#burgers"></use>
+          </svg>
+          <span class="menu-navigation__text">Бургеры</span>
+        </a>
+      </li>
+      <li class="menu-navigation__item">
+        <img class="menu-navigation__bg-image" src="/images/menu-navigation/desserts.jpg" alt="" role="presentation">
+        <a href="" class="menu-navigation__link">
+          <svg class="menu-navigation__icon" width="16" height="16">
+            <use xlink:href="/images/symbols.svg#desserts"></use>
+          </svg>
+          <span class="menu-navigation__text">Десерты</span>
+        </a>
+      </li>
+      <li class="menu-navigation__item">
+        <img class="menu-navigation__bg-image" src="/images/menu-navigation/snakes.jpg" alt="" role="presentation">
+        <a href="" class="menu-navigation__link">
+          <svg class="menu-navigation__icon" width="16" height="16">
+            <use xlink:href="/images/symbols.svg#snaks"></use>
+          </svg>
+          <span class="menu-navigation__text">Закуски</span>
+        </a>
+      </li>
+      <li class="menu-navigation__item">
+        <img class="menu-navigation__bg-image" src="/images/menu-navigation/main-courses.jpg" alt="" role="presentation">
+        <a href="" class="menu-navigation__link">
+          <svg class="menu-navigation__icon" width="16" height="16">
+            <use xlink:href="/images/symbols.svg#main-courses"></use>
+          </svg>
+          <span class="menu-navigation__text">Основные <br> блюда</span>
+        </a>
+      </li>
+      <li class="menu-navigation__item">
+        <img class="menu-navigation__bg-image" src="/images/menu-navigation/pizza.jpg" alt="" role="presentation">
+        <a href="" class="menu-navigation__link">
+          <svg class="menu-navigation__icon" width="16" height="16">
+            <use xlink:href="/images/symbols.svg#pizza"></use>
+          </svg>
+          <span class="menu-navigation__text">Пицца</span>
+        </a>
+      </li>
+      <li class="menu-navigation__item">
+        <img class="menu-navigation__bg-image" src="/images/menu-navigation/rolls.jpg" alt="" role="presentation">
+        <a href="" class="menu-navigation__link">
+          <svg class="menu-navigation__icon" width="16" height="16">
+            <use xlink:href="/images/symbols.svg#rolls"></use>
+          </svg>
+          <span class="menu-navigation__text">Роллы</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="gallery">
+    <h2 class="visually-hidden">Галерея</h2>
+    <!-- Slider main container -->
+    <div class="gallery__carousel gallery-carousel swiper-container" data-gallery-carousel>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="gallery-carousel__item gallery-slide swiper-slide">
+          <div class="gallery-slide__picture">
+            <a class="gallery-slide__link" href="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80" data-fancybox><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80" alt=""></a>
+          </div>
+        </div>
+        <div class="gallery-carousel__item gallery-slide swiper-slide">
+          <div class="gallery-slide__picture">
+            <a class="gallery-slide__link" href="https://images.unsplash.com/photo-1519690889869-e705e59f72e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" data-fancybox><img src="https://images.unsplash.com/photo-1519690889869-e705e59f72e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt=""></a>
+          </div>
+        </div>
+        <div class="gallery-carousel__item gallery-slide swiper-slide">
+          <div class="gallery-slide__picture">
+            <a class="gallery-slide__link" href="https://images.unsplash.com/photo-1519692548406-72146873010c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" data-fancybox><img src="https://images.unsplash.com/photo-1519692548406-72146873010c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt=""></a>
+          </div>
+        </div>
+        <div class="gallery-carousel__item gallery-slide swiper-slide">
+          <div class="gallery-slide__picture">
+            <a class="gallery-slide__link" href="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" data-fancybox><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" alt=""></a>
+          </div>
+        </div>
+        <div class="gallery-carousel__item gallery-slide swiper-slide">
+          <div class="gallery-slide__picture">
+            <a class="gallery-slide__link" href="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1330&q=80" data-fancybox><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1330&q=80" alt=""></a>
+          </div>
+        </div>
+        <div class="gallery-carousel__item gallery-slide swiper-slide">
+          <div class="gallery-slide__picture">
+            <a class="gallery-slide__link" href="https://images.unsplash.com/photo-1479796099910-b137a80acde4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=704&q=80" data-fancybox><img src="https://images.unsplash.com/photo-1479796099910-b137a80acde4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=704&q=80" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-carousel__navigation-holder container">
+        <div class="gallery-carousel__navigation gallery-carousel-navigation">
+          <button class="gallery-carousel-navigation__button gallery-carousel-navigation__button--prev" type="button">
+            <svg class="gallery-carousel-navigation__button-icon" width="16" height="16">
+              <use xlink:href="images/symbols.svg#arrow-left"></use>
+            </svg>
+          </button>
+          <div class="gallery-carousel-navigation__counter"></div>
+          <button class="gallery-carousel-navigation__button gallery-carousel-navigation__button--next" type="button">
+            <svg class="gallery-carousel-navigation__button-icon" width="16" height="16">
+              <use xlink:href="images/symbols.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact--active-maps - скрывается контактная ифномация и остается карта -->
+  <section class="contact contact--no-js">
+    <div class="contact__frame container">
+      <div class="contact__frame-inner">
+        <label class="contact__toggle-content contact-toggle-content">
+          <input class="visually-hidden" type="checkbox" name="show-maps">
+          <span class="contact-toggle-content__indicator"></span>
+          <span class="contact-toggle-content__label">Показать карту</span>
+        </label>
+        <div class="contact__maps">
+          <div class="contact__map contact__map--city contact-map-city" id="map" data-contact-map="city"></div>
+          <div class="contact__map contact__map--trc contact-map-trc" data-contact-map="trc">
+            <img src="https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1516&q=80" alt="">
+          </div>
+        </div>
+        <div class="contact__swap-maps contact-swap-maps">
+          <label>
+            <input class="visually-hidden" type="radio" name="current-map" value="city" checked>
+            <span class="button">На Яндекс.Картах</span>
+          </label>
+          <label>
+            <input class="visually-hidden" type="radio" name="current-map" value="trc">
+            <span class="button">По ТРЦ Аэропарк</span>
+          </label>
+        </div>
+        <div class="contact__main contact-main">
+          <h2 class="contact__title">Контактная информация</h2>
+          <div class="contact__info contact-info">
+            <ul class="contact-info__list">
+              <li class="contact-info__item">
+                <p class="contact-info__caption"><b>Адрес</b></p>
+                <p class="contact-info__value">ул. Объездная, 32 (ТРЦ «Аэро Парк», второй этаж, над фонтаном)</p>
+              </li>
+              <li class="contact-info__item">
+                <p class="contact-info__caption"><b>Телефон</b></p>
+                <p class="contact-info__value"><a class="contact-info__phone" href="tel:+74832305015">+7 (4832) 305-015</a></p>
+              </li>
+              <li class="contact-info__item">
+                <p class="contact-info__caption"><b>График работы</b></p>
+                <div class="contact-info__value contact-info__worktime contact-info-worktime">
+                  <ul class="contact-info-worktime__list">
+                    <li class="contact-info-worktime__item">
+                      <p class="contact-info-worktime__caption">
+                        пн–вс
+                      </p>
+                      <p class="contact-info-worktime__value">
+                        12:00–23:00
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="contact-info__item">
+                <div class="contact__taxi-wrapper">
+                  <script src="//yastatic.net/taxi-widget/ya-taxi-widget.js"></script>
+                  <div class="ya-taxi-widget" data-use-location="true" data-size="s" data-theme="action" data-title="На такси в ДиМарко" data-point-a="" data-point-b="34.315841,53.275467" data-ref="http%3A%2F%2Fdimarko32.ru%2F" data-proxy-url="https://3.redirect.appmetrica.yandex.com/route?start-lat={start-lat}&amp;start-lon={start-lon}&amp;end-lat={end-lat}&amp;end-lon={end-lon}&amp;ref={ref}&amp;appmetrica_tracking_id=1178268795219780156" data-description="Объездная улица, 30"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="contact__decors">
+        <img class="contact__decor contact__decor--leaf-1" src="/images/contact-decors/leaf-1.png" srcset="/images/contact-decors/leaf-1@2x.png 2x" role="presentation" data-depth="0.05">
+        <img class="contact__decor contact__decor--leaf-2" src="/images/contact-decors/leaf-2.png" srcset="/images/contact-decors/leaf-2@2x.png 2x" role="presentation" data-depth="0.1">
+        <img class="contact__decor contact__decor--tomato" src="/images/contact-decors/tomato.png" srcset="/images/contact-decors/tomato@2x.png 2x" role="presentation" data-depth="0.4">
+        <img class="contact__decor contact__decor--tomato-and-leaf" src="/images/contact-decors/tomato-and-leaf.png" srcset="/images/contact-decors/tomato-and-leaf@2x.png 2x" role="presentation" data-depth="0.3">
+      </div>
+    </div>
+  </section>
+
+  @@include('blocks/site-footer.html')
+</body>
+</html>

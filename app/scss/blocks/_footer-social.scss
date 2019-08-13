@@ -1,0 +1,36 @@
+.footer-social {
+
+}
+
+.footer-social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social__item {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-social__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $accent-color;
+}
+
+.footer-social__icon {
+  flex-shrink: 0;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.footer-social__text {
+
+}

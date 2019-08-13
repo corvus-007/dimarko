@@ -1,0 +1,42 @@
+html {
+  font-size: $text-size;
+
+  @media (min-width: 1440px) {
+    font-size: $text-size * 1.2;
+  }
+}
+
+body {
+  margin: 0;
+  line-height: 1.4;
+  font-family: $primary-font;
+  color: $base-color;
+
+  @media (min-width: 375px) {
+    background: url("images/bg-welcome.jpg") no-repeat;
+    background-position: -252px -88px;
+    background-size: 450px;
+  }
+
+  @media (min-width: 667px) {
+    background-position: -112px -88px;
+  }
+
+  @media (min-width: 768px) {
+    background-position: -48px -196px;
+  }
+
+  @media (min-width: 1024px) {
+    background-position: -28px -44px;
+  }
+
+  @media (min-width: 1280px) {
+    background-position: 0 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
