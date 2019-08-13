@@ -2,7 +2,15 @@ html {
   font-size: $text-size;
 
   @media (min-width: 1440px) {
+    font-size: $text-size * 1.16;
+  }
+
+  @media (min-width: 1600px) {
     font-size: $text-size * 1.2;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: $text-size * 1.24;
   }
 }
 

@@ -1,7 +1,7 @@
 window.map = (function(window, $) {
   'use strict';
 
-  const dirname = window.util.isDevMode() ? '' : '/wp-content/themes/next/';
+  const dirname = window.util.isDevMode() ? '' : '/wp-content/themes/dimarko/';
 
   const mapElem = document.querySelector('#map');
 
@@ -41,8 +41,6 @@ window.map = (function(window, $) {
   }
 
   ymaps.ready(function() {
-    console.log(device);
-
     const map = new ymaps.Map(mapElem, {
       center: mapConfig[device],
       zoom: 16,

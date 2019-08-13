@@ -70,16 +70,6 @@
       top: 64px;
       left: 20%;
     }
-
-    &--cutlets {
-      top: 148px;
-      right: -8%;
-    }
-
-    &--leaflet {
-      top: 20px;
-      right: 0%;
-    }
   }
 
   @media (min-width: 1024px) {
@@ -124,14 +114,4 @@
       right: 8%;
     }
   }
-
-  // @media (min-width: 1600px) {
-  //   &--pizza {
-  //     bottom: 12%;
-  //   }
-
-  //   &--spices {
-  //     right: 4%;
-  //   }
-  // }
 }

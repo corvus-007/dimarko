@@ -77,6 +77,8 @@
 
   @media (min-width: 1280px) {
     pointer-events: all;
+    overflow: hidden;
+    border-radius: 12px;
   }
 }
 
@@ -254,8 +256,8 @@
   position: absolute;
 
   &--leaf-1 {
-    top: -88px !important;
-    left: 0 !important;
+    top: -96px !important;
+    left: -12px !important;
   }
 
   &--leaf-2 {

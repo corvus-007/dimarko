@@ -9,7 +9,7 @@
 }
 
 .contact-info__item {
-  margin-bottom: 24px;
+  margin-bottom: rem(24px);
 
   &:last-child {
     margin-bottom: 0;
@@ -37,11 +37,6 @@
 .contact-info__phone {
   text-decoration: none;
   color: currentColor;
-
-  &:hover,
-  &:focus {
-    // color: $accent-color;
-  }
 }
 
 .contact-info__worktime {

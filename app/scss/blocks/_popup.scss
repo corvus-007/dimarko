@@ -1,13 +1,13 @@
 .popup {
   padding: 0;
   width: calc(100% - 20px * 2);
-  max-width: 480px;
-  border-radius: 4px;
+  max-width: rem(480px);
+  border-radius: 12px;
   background-color: #ffffff;
   box-sizing: border-box;
 
   &--narrow {
-    max-width: 360px;
+    max-width: rem(360px);
   }
 }
 
@@ -27,7 +27,7 @@
   }
 
   @media (min-width: 768px) {
-    font-size: 32px;
+    font-size: rem(32px);
   }
 }
 

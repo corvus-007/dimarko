@@ -56,7 +56,7 @@ window.contact = (function(window, $) {
     });
   }
 
-  if (window.matchMedia('(pointer: fine)').matches) {
+  if (window.matchMedia('(pointer: fine) and (min-width: 1280px)').matches) {
     const scene = document.querySelector('.contact__decors');
     const parallaxInstance = new Parallax(scene, {
       relativeInput: true

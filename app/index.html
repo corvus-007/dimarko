@@ -33,12 +33,30 @@
             </p>
           </div>
           <div class="welcome-slide__decors welcome-decors-slide-1 container">
-            <img class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--pizza" src="/images/welcome-slides/pizza.png" srcset="/images/welcome-slides/pizza@2x.png 2x" data-swiper-parallax="200" data-swiper-parallax-opacity="0" role="presentation">
-            <img class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--french-fries" src="/images/welcome-slides/french-fries.png" srcset="/images/welcome-slides/french-fries@2x.png 2x" data-swiper-parallax="400" data-swiper-parallax-opacity="0" role="presentation">
-            <img class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--spices" src="/images/welcome-slides/spices.png" srcset="/images/welcome-slides/spices@2x.png 2x" data-swiper-parallax="-200" data-swiper-parallax-opacity="0" role="presentation">
-            <img class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--sauce" src="/images/welcome-slides/sauce.png" srcset="/images/welcome-slides/sauce@2x.png 2x" data-swiper-parallax="300" data-swiper-parallax-opacity="0" role="presentation">
-            <img class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--cutlets" src="/images/welcome-slides/cutlets.png" srcset="/images/welcome-slides/cutlets@2x.png 2x" data-swiper-parallax="-300" data-swiper-parallax-opacity="0" role="presentation">
-            <img class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--leaflet" src="/images/welcome-slides/leaflet.png" srcset="/images/welcome-slides/leaflet@2x.png 2x" data-swiper-parallax="400" data-swiper-parallax-opacity="0" role="presentation">
+            <picture class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--pizza" data-swiper-parallax="200" data-swiper-parallax-opacity="0">
+              <source media="(min-width: 375px)" srcset="/images/welcome-slides/pizza.png, /images/welcome-slides/pizza@2x.png 2x">
+              <img src="/images/1px.png" role="presentation">
+            </picture>
+            <picture class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--french-fries" data-swiper-parallax="400" data-swiper-parallax-opacity="0">
+              <source media="(min-width: 375px)" srcset="/images/welcome-slides/french-fries.png, /images/welcome-slides/french-fries@2x.png 2x">
+              <img src="/images/1px.png" role="presentation">
+            </picture>
+            <picture class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--spices" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+              <source media="(min-width: 375px)" srcset="/images/welcome-slides/spices.png, /images/welcome-slides/spices@2x.png 2x">
+              <img src="/images/1px.png" role="presentation">
+            </picture>
+            <picture class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--sauce" data-swiper-parallax="300" data-swiper-parallax-opacity="0">
+              <source media="(min-width: 375px)" srcset="/images/welcome-slides/sauce.png, /images/welcome-slides/sauce@2x.png 2x">
+              <img src="/images/1px.png" role="presentation">
+            </picture>
+            <picture class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--cutlets" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+              <source media="(min-width: 375px)" srcset="/images/welcome-slides/cutlets.png, /images/welcome-slides/cutlets@2x.png 2x">
+              <img src="/images/1px.png" role="presentation">
+            </picture>
+            <picture class="welcome-decors-slide-1__decor welcome-decors-slide-1__decor--leaflet" data-swiper-parallax="400" data-swiper-parallax-opacity="0">
+              <source media="(min-width: 375px)" srcset="/images/welcome-slides/leaflet.png, /images/welcome-slides/leaflet@2x.png 2x">
+              <img src="/images/1px.png" role="presentation">
+            </picture>
           </div>
         </div>
         <div class="welcome-carousel__item welcome-slide swiper-slide">
@@ -257,10 +275,22 @@
         </div>
       </div>
       <div class="contact__decors">
-        <img class="contact__decor contact__decor--leaf-1" src="/images/contact-decors/leaf-1.png" srcset="/images/contact-decors/leaf-1@2x.png 2x" role="presentation" data-depth="0.05">
-        <img class="contact__decor contact__decor--leaf-2" src="/images/contact-decors/leaf-2.png" srcset="/images/contact-decors/leaf-2@2x.png 2x" role="presentation" data-depth="0.1">
-        <img class="contact__decor contact__decor--tomato" src="/images/contact-decors/tomato.png" srcset="/images/contact-decors/tomato@2x.png 2x" role="presentation" data-depth="0.4">
-        <img class="contact__decor contact__decor--tomato-and-leaf" src="/images/contact-decors/tomato-and-leaf.png" srcset="/images/contact-decors/tomato-and-leaf@2x.png 2x" role="presentation" data-depth="0.3">
+        <picture class="contact__decor contact__decor--leaf-1" data-depth="0.05">
+          <source media="(min-width: 1280px)" srcset="/images/contact-decors/leaf-1.png, /images/contact-decors/leaf-1@2x.png 2x">
+          <img src="/images/1px.png" role="presentation">
+        </picture>
+        <picture class="contact__decor contact__decor--leaf-2" data-depth="0.15">
+          <source media="(min-width: 1280px)" srcset="/images/contact-decors/leaf-2.png, /images/contact-decors/leaf-2@2x.png 2x">
+          <img src="/images/1px.png" role="presentation">
+        </picture>
+        <picture class="contact__decor contact__decor--tomato" data-depth="0.6">
+          <source media="(min-width: 1280px)" srcset="/images/contact-decors/tomato.png, /images/contact-decors/tomato@2x.png 2x">
+          <img src="/images/1px.png" role="presentation">
+        </picture>
+        <picture class="contact__decor contact__decor--tomato-and-leaf" data-depth="0.3">
+          <source media="(min-width: 1280px)" srcset="/images/contact-decors/tomato-and-leaf.png, /images/contact-decors/tomato-and-leaf@2x.png 2x">
+          <img src="/images/1px.png" role="presentation">
+        </picture>
       </div>
     </div>
   </section>
