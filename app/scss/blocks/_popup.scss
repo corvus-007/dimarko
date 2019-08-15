@@ -24,10 +24,6 @@
   text-align: center;
 
   @media (min-width: 667px) {
-    font-size: 28px;
-  }
-
-  @media (min-width: 768px) {
     font-size: rem(28px);
   }
 }
