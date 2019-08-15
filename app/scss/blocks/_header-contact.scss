@@ -14,6 +14,27 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &--callback {
+    margin-right: 0;
+  }
+
+  &--phone-button {
+    margin-right: 0;
+  }
+
+
+  @media (max-width: 767px) {
+    &--callback {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &--phone-button {
+      display: none;
+    }
+  }
 }
 
 .header-contact__phone {
@@ -38,6 +59,11 @@
   }
 }
 
+.header-contact__phone-button {
+  min-width: auto;
+  padding: 12px;
+}
+
 .header-contact__phone-code {
   @media (max-width: 374px) {
     display: none;
@@ -50,24 +76,5 @@
 
   @media (min-width: 667px) {
     font-size: rem(24px);
-  }
-}
-
-.header-contact__callback-button {
-  @media (max-width: 767px) {
-    min-width: auto;
-    padding: 12px;
-  }
-}
-
-.header-contact__callback-text {
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
-
-.header-contact__callback-icon {
-  @media (min-width: 768px) {
-    display: none;
   }
 }
