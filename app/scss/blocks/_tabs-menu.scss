@@ -1,0 +1,56 @@
+.tabs-menu {
+}
+
+.tabs-menu__nav {
+  @include clear-list();
+
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  @media (min-width: 1024px) {
+    justify-content: center;
+    overflow-x: visible;
+  }
+}
+
+.tabs-menu__nav-item {
+}
+
+.tabs-menu__nav-item-link {
+  display: block;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  color: $base-color;
+  opacity: 0.5;
+  transition: 0.1s;
+
+  &:hover,
+  &:focus {
+    color: $base-color;
+    opacity: 0.8;
+  }
+
+  .active & {
+    color: $base-color;
+    opacity: ;
+  }
+
+  @media (min-width: 1024px) {
+    padding-bottom: 0;
+  }
+}
+
+.tabs-menu__nav-item-icon {
+  display: block;
+  width: 52px;
+  height: 52px;
+  fill: currentColor;
+
+  @media (min-width: 768px) {
+    width: rem(62px);
+    height: rem(62px);
+  }
+}

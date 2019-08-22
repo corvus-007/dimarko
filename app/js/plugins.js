@@ -4,3 +4,6 @@
 //=require ../../node_modules/swiper/dist/js/swiper.min.js
 //=require ../../node_modules/jquery.pep.js/src/jquery.pep.js
 //=require ../../node_modules/parallax-js/dist/parallax.min.js
+//=require ../../node_modules/tabslet/jquery.tabslet.min.js
+//=require ../../node_modules/popper.js/dist/umd/popper.min.js
+//=require ../../node_modules/tippy.js/umd/index.all.js

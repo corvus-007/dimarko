@@ -3,6 +3,8 @@
 svg4everybody();
 floatLabel.init();
 
+tippy('[data-tippy-content]');
+
 $.fancybox.defaults.animationEffect = 'zoom-in-out';
 $.fancybox.defaults.preventCaptionOverlap = false;
 
@@ -61,3 +63,5 @@ const galleryCarousel = new Swiper('[data-gallery-carousel]', {
     prevEl: '.gallery-carousel-navigation__button--prev'
   }
 });
+
+$('.tabs-menu').tabslet();

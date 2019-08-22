@@ -5,6 +5,7 @@
 // Vendors
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
 @import "../../node_modules/swiper/dist/css/swiper.min";
+@import "../../node_modules/tippy.js/index";
 
 // Global
 @import "global/fonts";
@@ -16,10 +17,14 @@
 
 // Blocks
 @import "blocks/popup";
+@import "blocks/popup-menu-product";
 @import "blocks/input";
 @import "blocks/field";
 @import "blocks/form";
 @import "blocks/button";
+@import "blocks/page-title";
+@import "blocks/page";
+@import "blocks/main";
 @import "blocks/header-contact";
 @import "blocks/site-header";
 @import "blocks/welcome-decors-slide-1";
@@ -38,5 +43,8 @@
 @import "blocks/contact-map-city";
 @import "blocks/contact-map-trc";
 @import "blocks/contact";
+@import "blocks/tabs-menu";
+@import "blocks/menu-card";
+@import "blocks/menu-list";
 @import "blocks/footer-social";
 @import "blocks/site-footer";

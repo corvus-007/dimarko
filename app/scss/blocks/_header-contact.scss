@@ -45,6 +45,10 @@
   color: $base-color;
   transition: 0.1s;
 
+  &:not(.home) {
+    color: #ffffff;
+  }
+
   &:hover,
   &:focus {
     color: $accent-color;

@@ -20,6 +20,10 @@ body {
   font-family: $primary-font;
   color: $base-color;
 
+  &:not(.home) {
+    background-image: none;
+  }
+
   @media (min-width: 375px) {
     background: url("images/bg-welcome.jpg") no-repeat;
     background-position: -252px -88px;

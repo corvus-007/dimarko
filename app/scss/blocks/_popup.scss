@@ -2,7 +2,7 @@
   padding: 0;
   width: calc(100% - 20px * 2);
   max-width: rem(480px);
-  border-radius: 12px;
+  border-radius: 4px;
   background-color: #ffffff;
   box-sizing: border-box;
 
@@ -12,9 +12,9 @@
 }
 
 .popup__header {
-  padding: 32px;
-  padding-bottom: 24px;
-  padding-right: 44px;
+  padding: rem(32px);
+  padding-bottom: rem(24px);
+  padding-right: rem(44px);
 }
 
 .popup__title {
@@ -29,6 +29,6 @@
 }
 
 .popup__main {
-  padding: 32px;
-  padding-top: 24px;
+  padding: rem(32px);
+  padding-top: rem(24px);
 }

@@ -1,0 +1,59 @@
+.menu-card {
+
+}
+
+.menu-card__wraplink {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: $base-color;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.menu-card__picture {
+  @include make-fit-object(300, 225);
+}
+
+.menu-card__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: rem(20px);
+}
+
+.menu-card__name {
+  margin: 0;
+  margin-bottom: rem(24px);
+  font-size: rem(24px);
+  line-height: 1;
+  font-weight: 600;
+
+  small {
+    margin-top: 8px;
+    display: block;
+    font-weight: 400;
+    font-size: em(18, 24px);
+    color: $muted-color;
+  }
+}
+
+.menu-card__description {
+  @include clear-mr-edges-elem();
+
+  font-size: rem(16px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.menu-card__info {
+  margin-top: auto;
+}
+
+.menu-card__price {
+  margin: 0;
+  font-weight: 600;
+  font-size: rem(28px);
+  text-align: right;
+}
