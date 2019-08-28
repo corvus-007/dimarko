@@ -1,0 +1,35 @@
+.menu-sheet {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu-sheet__title {
+  margin: 0;
+  margin-bottom: rem(32px);
+  font-weight: 400;
+  font-size: rem(28px);
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+
+  small {
+    position: relative;
+    display: block;
+    margin-top: 12px;
+    padding-top: 12px;
+    font-size: em(16, 28px);
+    color: $muted-color;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100px;
+      height: 1px;
+      transform: translateX(-50%);
+      background-color: $muted-color;
+      opacity: 0.6;
+    }
+  }
+}

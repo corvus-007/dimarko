@@ -45,10 +45,6 @@
   color: $base-color;
   transition: 0.1s;
 
-  &:not(.home) {
-    color: #ffffff;
-  }
-
   &:hover,
   &:focus {
     color: $accent-color;
@@ -56,6 +52,15 @@
 
   &:active {
     opacity: 0.8;
+  }
+
+  body:not(.home) & {
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 
   @media (min-width: 667px) {

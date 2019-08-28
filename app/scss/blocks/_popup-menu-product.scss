@@ -36,8 +36,8 @@
 
   @media (min-width: 667px) {
     padding-top: rem(32px);
-    padding-bottom: rem(32px);
     padding-right: rem(32px);
+    padding-bottom: rem(32px);
   }
 }
 
@@ -49,8 +49,8 @@
   line-height: 1;
 
   small {
-    margin-top: 8px;
     display: block;
+    margin-top: 8px;
     font-weight: 400;
     font-size: em(18, 28px);
     color: $muted-color;
@@ -79,7 +79,7 @@
 
     margin: 0;
     margin-bottom: rem(12px);
-    font-size: rem(18px);
+    font-size: rem(16px);
     line-height: 1.2;
 
     &:last-child {
@@ -91,5 +91,5 @@
 .popup-menu-product__price {
   margin: 0;
   font-weight: 600;
-  font-size: rem(24px);
+  font-size: rem(28px);
 }

@@ -22,10 +22,6 @@
   margin-right: 20px;
   width: 100px;
 
-  // &:not(.home) {
-  //   filter: invert(1);
-  // }
-
   a {
     display: block;
     text-decoration: none;
@@ -41,7 +37,9 @@
   }
 
   @media (max-width: 374px) {
-    filter: invert(0.8);
+    .home & {
+      filter: invert(0.8);
+    }
   }
 
   @media (min-width: 768px) {
