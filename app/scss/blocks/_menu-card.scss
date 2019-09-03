@@ -23,10 +23,15 @@
     transform: translateY(-8px);
     border-color: rgba(#9babba, 0.4);
   }
+
+  .menu-card--black & {
+    color: #ffffff;
+    background-color: $black-color;
+  }
 }
 
 .menu-card__picture {
-  @include make-fit-object(300, 225);
+  @include make-fit-object(300, 225, contain);
 
   margin-bottom: rem(20px);
 }
@@ -52,6 +57,15 @@
   font-size: rem(14px);
   line-height: 1.3;
   color: $muted-color;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  .menu-card--black & {
+    color: $gray-224;
+  }
 }
 
 .menu-card__info {

@@ -1,6 +1,11 @@
 .popup-menu-product {
   max-width: 320px;
 
+  &--black {
+    color: #ffffff;
+    background-color: $black-color;
+  }
+
   @media (min-width: 375px) {
     max-width: 400px;
   }
@@ -63,6 +68,10 @@
   margin-bottom: rem(20px);
   font-size: rem(16px);
   line-height: 1.25;
+
+  .popup-menu-product--black & {
+    color: $gray-224;
+  }
 }
 
 .popup-menu-product__info {
@@ -72,6 +81,10 @@
     font-weight: 600;
     font-size: rem(14px);
     color: $muted-color;
+
+    .popup-menu-product--black & {
+      color: $gray-158;
+    }
   }
 
   dd {
@@ -81,6 +94,10 @@
     margin-bottom: rem(12px);
     font-size: rem(16px);
     line-height: 1.2;
+
+    .popup-menu-product--black & {
+      color: $gray-224;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -92,4 +109,8 @@
   margin: 0;
   font-weight: 600;
   font-size: rem(28px);
+
+  .popup-menu-product--black & {
+    color: #ffffff;
+  }
 }

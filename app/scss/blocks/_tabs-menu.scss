@@ -12,13 +12,21 @@
   @include clear-list();
 
   display: flex;
+  margin-left: -20px;
+  margin-right: -20px;
   margin-bottom: 24px;
   padding: 4px;
-  padding-bottom: 8px;
+
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   background-color: #f5f5f5;
-  border-radius: 8px;
+
+
+  @media (min-width: 668px) {
+    margin-left: initial;
+    margin-right: initial;
+    // border-radius: 8px;
+  }
 
   @media (min-width: 768px) {
     position: sticky;
@@ -26,10 +34,13 @@
     bottom: 20px;
     flex-direction: column;
     justify-content: center;
+    margin-left: initial;
+    margin-right: initial;
     padding: 0;
     padding-top: 4px;
     padding-bottom: 4px;
     overflow-x: visible;
+    padding-bottom: 8px;
   }
 
   @media (min-width: 1024px) {
@@ -39,10 +50,14 @@
 }
 
 .tabs-menu__nav-item {
-  margin-right: 4%;
+  margin-right: 8px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (min-width: 414px) {
+    margin-right: 16px;
   }
 
   @media (min-width: 768px) {
@@ -79,4 +94,9 @@
   width: rem(48px);
   height: rem(48px);
   fill: currentColor;
+
+  @media (pointer: coarse) {
+    width: rem(60px);
+    height: rem(60px);
+  }
 }

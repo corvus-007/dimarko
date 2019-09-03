@@ -64,4 +64,4 @@ const galleryCarousel = new Swiper('[data-gallery-carousel]', {
   }
 });
 
-$('.tabs-menu').tabslet();
+
