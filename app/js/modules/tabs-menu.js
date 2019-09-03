@@ -1,16 +1,20 @@
 window.tabsMenu = (function(window, $) {
   'use strict';
 
+  const tabsMenu = document.querySelector('.tabs-menu');
+
+  if (!tabsMenu) {
+    return;
+  }
+
   const urlParams = new URLSearchParams(window.location.search);
   const categoryKey = urlParams.get('category');
-  const tabsMenu = document.querySelector('.tabs-menu');
   const tabsMenuPanelItems = tabsMenu.querySelectorAll('.tabs-menu__panel');
   let categoryIndex = 1;
 
   for (let i = 0; i < tabsMenuPanelItems.length; i++) {
     const panel = tabsMenuPanelItems[i];
     const panelId = panel.id;
-
 
     if (panelId === categoryKey) {
       debugger;
