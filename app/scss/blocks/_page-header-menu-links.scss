@@ -1,0 +1,18 @@
+.page-header-menu-links {
+
+}
+
+.page-header-menu-links__list {
+  @include clear-list();
+
+  display: flex;
+  justify-content: center;
+}
+
+.page-header-menu-links__item {
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

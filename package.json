@@ -28,9 +28,9 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "dragscroll": "0.0.8",
     "inputmask": "^4.0.8",
     "jquery": "^3.4.1",
-    "jquery.pep.js": "^0.6.10",
     "parallax-js": "^3.1.0",
     "popper.js": "^1.15.0",
     "svg4everybody": "^2.1.9",

@@ -13,14 +13,28 @@ window.contact = (function(window, $) {
   const swapMaps = contact.querySelector('.contact-swap-maps');
   const maps = contact.querySelectorAll('[data-contact-map]');
   const mapTRC = contact.querySelector('[data-contact-map="trc"]');
-  const mapTRCImage = mapTRC.querySelector('img');
+  const mapTRCTip = mapTRC.querySelector('.contact-map-trc__tip');
   const currentMapInput = document.querySelector(
     '[name="current-map"]:checked'
   );
   const currentMapInputValue = currentMapInput.value;
 
-  mapTRCImage.addEventListener('load', function() {
-    setConstrainMapTRC();
+
+  function showgTRCTip() {
+    mapTRCTip.classList.remove('contact-map-trc__tip--hidden');
+  }
+
+  function hideTRCTip() {
+    mapTRCTip.classList.add('contact-map-trc__tip--hidden');
+  }
+
+  showgTRCTip();
+  mapTRCTip.addEventListener('touchstart', function(event) {
+    hideTRCTip();
+  });
+
+  mapTRCTip.addEventListener('mousedown', function(event) {
+    hideTRCTip();
   });
 
   maps.forEach(map => {
@@ -42,19 +56,6 @@ window.contact = (function(window, $) {
       map.classList.toggle('contact__map--current', isCurrent);
     });
   });
-
-  function constrainArray() {
-    const wDiff = mapTRCImage.clientWidth - mapTRC.clientWidth;
-    const hDiff = mapTRCImage.clientHeight - mapTRC.clientHeight;
-
-    return [-hDiff, 0, 0, -wDiff];
-  }
-
-  function setConstrainMapTRC() {
-    $(mapTRCImage).pep({
-      constrainTo: constrainArray()
-    });
-  }
 
   if (window.matchMedia('(pointer: fine) and (min-width: 1280px)').matches) {
     const scene = document.querySelector('.contact__decors');

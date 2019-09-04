@@ -1,11 +1,17 @@
 .site-footer {
-  padding-top: calc(100px + 32px);
+  padding-top: 32px;
   padding-bottom: 32px;
   color: #9babba;
   background-color: #182d36;
 
+  .home & {
+    padding-top: calc(100px + 32px);
+  }
+
   @media (max-height: 512px) {
-    padding-top: calc(140px + 60px + 32px);
+    .home & {
+      padding-top: calc(140px + 60px + 32px);
+    }
   }
 
   @media (min-width: 1024px) {
@@ -13,7 +19,9 @@
   }
 
   @media (min-width: 1280px) {
-    padding-top: calc(48px + 32px + 40px);
+    .home & {
+      padding-top: calc(48px + 32px + 40px);
+    }
   }
 }
 
@@ -67,5 +75,10 @@
   a {
     text-decoration: none;
     color: $accent-color;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+    }
   }
 }

@@ -1,11 +1,42 @@
 .menu-sheet {
   padding-top: 20px;
   padding-bottom: 20px;
+
+  & > h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: rem(40px);
+    margin-bottom: rem(32px);
+    font-weight: 400;
+    font-size: rem(28px);
+    text-align: center;
+    line-height: 1;
+    // text-transform: uppercase;
+
+    &::before,
+    &::after {
+      content: "";
+      flex-grow: 1;
+      height: 1px;
+      background-color: $muted-color;
+      opacity: 0.4;
+    }
+
+    &::before {
+      margin-right: rem(20px);
+    }
+
+    &::after {
+      margin-left: rem(20px);
+    }
+  }
 }
 
 .menu-sheet__title {
   margin: 0;
-  margin-bottom: rem(32px);
+  margin-bottom: rem(40px);
   font-weight: 400;
   font-size: rem(28px);
   text-align: center;

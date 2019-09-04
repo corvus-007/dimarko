@@ -13,14 +13,27 @@
 
   <main class="main">
     <article class="page">
-      <header class="page__header">
-        <div class="container">
-          <h1 class="page__title page-title">Меню</h1>
+      <header class="page-header">
+        <div class="page-header__inner container">
+          <h1 class="page-title">Меню</h1>
+          <div class="page-header__menu-links page-header-menu-links">
+            <ul class="page-header-menu-links__list">
+              <li class="page-header-menu-links__item page-header-menu-item">
+                <a class="page-header-menu-item__wraplink" href="">
+                  <svg class="page-header-menu-item__icon" width="16" height="16">
+                    <use xlink:href="/images/symbols.svg#pdf-file"></use>
+                  </svg>
+                  <span class="page-header-menu-item__label">Скачать <br> меню</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="page__feature-image">
           <img src="https://images.unsplash.com/photo-1541167113378-1f06d813887f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" role="presentation">
         </div>
       </header>
+
       <div class="page__content">
         <div class="container">
           <div class="tabs-menu">
@@ -86,6 +99,7 @@
             <div class="tabs-menu__panel" id="snacks">
               <section class="menu-sheet">
                 <h2 class="menu-sheet__title">Закуски, супы, салаты <small lang="it">Snack, zuppe, insalate</small></h2>
+                <h3>Рыба</h3>
                 <ul class="menu-list">
                   <!-- .menu-card--black  - Темная карточка-->
                   <li class="menu-list__item menu-card menu-card--black">

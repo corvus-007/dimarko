@@ -2,22 +2,6 @@
   // padding-top: 72px;
 }
 
-.page__header {
-  position: relative;
-  margin-bottom: 80px;
-  padding-top: calc(74px + 72px);
-  padding-bottom: rem(120px);
-  color: #ffffff;
-
-  @media (min-width: 768px) {
-    padding-top: calc(#{rem(102px)} + #{rem(100px)});
-  }
-
-  @media (min-width: 1024px) {
-    padding-top: calc(#{rem(109px)} + #{rem(100px)});
-  }
-}
-
 .page__feature-image {
   position: absolute;
   top: 0;
@@ -45,8 +29,6 @@
 }
 
 .page__title {
-  position: relative;
-  z-index: 1;
 }
 
 .page__footer {

@@ -3,16 +3,18 @@
 }
 
 .footer-social__list {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .footer-social__item {
-  margin-bottom: 16px;
+  margin-right: 16px;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-right: 0;
   }
 }
 
@@ -21,16 +23,17 @@
   align-items: center;
   text-decoration: none;
   color: $accent-color;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
 }
 
 .footer-social__icon {
   flex-shrink: 0;
-  margin-right: 12px;
   width: 24px;
   height: 24px;
   fill: currentColor;
-}
-
-.footer-social__text {
-
 }
