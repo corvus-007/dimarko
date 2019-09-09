@@ -1,0 +1,25 @@
+.drinks-set {
+
+}
+
+.drinks-set__title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: rem(28px);
+  line-height: 1.2;
+}
+
+.drinks-set__list {
+  @include clear-list();
+}
+
+.drinks-set__item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

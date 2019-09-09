@@ -1,0 +1,19 @@
+.drinks {
+  columns: 3 260px;
+  column-gap: 60px;
+  column-rule: 1px solid rgba($base-color, 0.1);
+
+  @media (min-width: 1280px) {
+    columns: 3 280px;
+  }
+
+  @media (min-width: 1600px) {
+    column-gap: rem(100px);
+  }
+}
+
+.drinks__set {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: rem(52px);
+}
